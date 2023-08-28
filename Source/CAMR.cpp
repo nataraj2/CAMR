@@ -1323,7 +1323,6 @@ CAMR::ZeroOutSolidWalls(amrex::MultiFab& S)
 	   {
 			for (int n = 0; n < ncomp; ++n) {
 				if(Sarr(i, j, k, n) < 1e-12){
-					std::cout << "Values here is " << Sarr(i, j, k, n) << "\n";
 					Sarr(i, j, k, n) = 0.0;
 				}
 			}
